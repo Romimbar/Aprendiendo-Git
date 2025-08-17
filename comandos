@@ -1,0 +1,66 @@
+Ejercicio práctico de Git paso a paso.
+
+1. Configurar Git
+git config --global user.name "Tu Nombre"
+git config --global user.email "tuemail@example.com"
+git config --global color.ui auto
+
+ Ver el configuración final:
+git config --list
+
+2. Crear un nuevo repositorio
+mkdir AprendiendoGit
+cd AprendiendoGit
+git init
+
+ Ver el contenido inicial:
+ls -a
+
+3.Crear archivo Readme.md con texto
+echo "Git Fundamentos" > Readme.md
+
+4. Comprobar el estado del repositorio
+git status
+
+5.Añadir archivo al área de staging
+git add Readme.md
+
+6. Verificar estado otra vez
+git status
+
+7. Abrir el repositorio en Visual Studio Code
+code .
+
+8. Editar Readme.md y agregar la fecha actual
+echo "Fecha: 15/08/2025" >> Readme.md
+Hacer el commit:
+git add Readme.md
+git commit -m "Fecha"
+
+9. Crear archivo index.html
+echo "<!DOCTYPE html>
+<html>
+<head>
+  <title>Introduccion a GIT</title>
+</head>
+<body>
+  <h1>Introduccion a GIT</h1>
+</body>
+</html>" > index.html
+
+10. Ver todos los cambios en el repositorio
+git status
+git log --oneline
+
+
+
+
+
+
+
+
+
+
+
+
+
